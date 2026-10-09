@@ -1,0 +1,32 @@
+
+=== min_ade: 2640 decisions, 22 scenarios, 129 clips ===
+mean: {'full': 3.822, 'adaptive': 3.399, 'FLFR': 3.887, 'random': 3.95}
+  adaptive-full    by scenario -0.423 [-0.587, -0.270] *
+  FLFR-full        by scenario +0.065 [-0.120, +0.239]
+  random-full      by scenario +0.128 [-0.029, +0.267]
+  adaptive-FLFR    by scenario -0.488 [-0.575, -0.404] *
+  adaptive-random  by scenario -0.550 [-0.628, -0.473] *
+  per situation (bootstrap over clips):
+   normal  n=1804  full=3.73 adaptive=3.19 FLFR=3.51 random=3.74 | a-full: -0.541 [-0.715, -0.370] * | a-FLFR: -0.324 [-0.427, -0.224] * | a-random: -0.551 [-0.665, -0.435] *
+   left    n=242   full=5.43 adaptive=5.07 FLFR=6.50 random=6.36 | a-full: -0.356 [-0.821, +0.048] | a-FLFR: -1.427 [-1.867, -0.981] * | a-random: -1.284 [-1.724, -0.855] *
+   right   n=220   full=3.90 adaptive=3.90 FLFR=4.01 random=4.05 | a-full: -0.000 [-0.420, +0.403] | a-FLFR: -0.118 [-0.369, +0.146] | a-random: -0.151 [-0.503, +0.146]
+   slow    n=374   full=3.19 adaptive=3.05 FLFR=3.94 random=3.36 | a-full: -0.144 [-0.611, +0.289] | a-FLFR: -0.890 [-1.313, -0.479] * | a-random: -0.308 [-0.586, -0.066] *
+  scenarios where adaptive is lower than full / FLFR / random: 19 22 22 of 22
+
+=== fde: 2640 decisions, 22 scenarios, 129 clips ===
+mean: {'full': 10.766, 'adaptive': 9.693, 'FLFR': 11.09, 'random': 11.271}
+  adaptive-full    by scenario -1.074 [-1.492, -0.675] *
+  FLFR-full        by scenario +0.324 [-0.217, +0.818]
+  random-full      by scenario +0.505 [+0.050, +0.921] *
+  adaptive-FLFR    by scenario -1.398 [-1.656, -1.145] *
+  adaptive-random  by scenario -1.578 [-1.785, -1.392] *
+  per situation (bootstrap over clips):
+   normal  n=1804  full=10.52 adaptive=9.16 FLFR=10.12 random=10.76 | a-full: -1.363 [-1.874, -0.872] * | a-FLFR: -0.955 [-1.304, -0.625] * | a-random: -1.596 [-1.954, -1.224] *
+   left    n=242   full=14.36 adaptive=13.42 FLFR=17.19 random=16.89 | a-full: -0.940 [-2.304, +0.215] | a-FLFR: -3.771 [-5.084, -2.426] * | a-random: -3.472 [-4.730, -2.172] *
+   right   n=220   full=11.16 adaptive=10.89 FLFR=11.28 random=11.17 | a-full: -0.266 [-1.491, +0.821] | a-FLFR: -0.384 [-1.208, +0.426] | a-random: -0.274 [-1.297, +0.659]
+   slow    n=374   full=9.38 adaptive=9.14 FLFR=11.73 random=10.17 | a-full: -0.237 [-1.606, +1.070] | a-FLFR: -2.593 [-3.904, -1.370] * | a-random: -1.033 [-1.883, -0.266] *
+  scenarios where adaptive is lower than full / FLFR / random: 18 22 22 of 22
+
+inference time per decision, ms: mean {'FLFR': 431.0, 'adaptive': 432.9, 'full': 716.7, 'random': 434.3} | median {'FLFR': 439.2, 'adaptive': 431.7, 'full': 723.4, 'random': 432.6}
+situation decision time, ms: median 0.257 max 0.603
+schedules used by adaptive: {'FFLF': 1804, 'LRRL': 374, 'FFFF': 242, 'LFRL': 220}

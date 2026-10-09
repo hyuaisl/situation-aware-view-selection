@@ -1,0 +1,12 @@
+samples: {'dev': {'left': 58, 'normal': 77, 'right': 46, 'slow': 58}, 'test': {'left': 42, 'normal': 73, 'right': 54, 'slow': 42}}
+best schedules over all samples: {'FFFF': -0.041, 'FFLF': 0.016, 'FLFF': 0.061}
+normal  -> FFLF  (selection -0.675; next FFFF -0.621, LFFF -0.616, FLFF -0.604)
+left    -> FFFF  (selection -0.088; next FLFF +0.414, FFFL +0.426, FFLF +0.478)
+right   -> LFRL  (selection -0.311; next FLLR -0.287, LLFR -0.283, LFLR -0.281)
+slow    -> LRRL  (selection +0.240; next LLRR +0.269, LRRR +0.273, FFFF +0.286)
+held-out ALL     n=211  situation-wise - full: -0.201 [-0.563, +0.139]
+held-out normal  n=73   situation-wise - full: -0.590 [-1.243, -0.055] *
+held-out left    n=42   situation-wise - full: -0.668 [-1.759, +0.380]
+held-out right   n=54   situation-wise - full: +0.656 [+0.163, +1.209] *
+held-out slow    n=42   situation-wise - full: -0.161 [-0.730, +0.361]
+inference time (median): full 690 ms, 4-image schedules 418-432 ms

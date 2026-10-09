@@ -1,0 +1,5 @@
+  4 images: median   431.5 ms  (36450 runs)
+ 12 images: median   690.1 ms  (450 runs)
+ 16 images: median   848.7 ms  (446 runs)
+ 24 images: median  1163.8 ms  (446 runs)
+linear fit: 269 ms + 36.7 ms per image

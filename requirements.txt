@@ -1,0 +1,8 @@
+# Versions used for the paper (Python 3.12.3, CUDA 12.8, RTX 5080 16 GB)
+torch==2.8.0
+transformers==4.57.1
+numpy==2.5.2
+pandas==3.0.6
+scipy==1.18.1
+pillow==12.3.0
+physical_ai_av==0.2.2   # only for 01_prepare_clips.py
